@@ -1,26 +1,37 @@
 # SmartPanel for Home Assistant
 
-Un pannello touchscreen basato su ESP32-S3, display JC3248W535 e LVGL, perfettamente integrato con Home Assistant.
+Un'interfaccia touchscreen avanzata per Home Assistant, basata su ESPHome e LVGL, progettata per dispositivi come il JC3248W535.
 
-## Caratteristiche principali
-- Controllo di dispositivi tramite Home Assistant
-- Visualizzazione di dati in tempo reale (sensori, orari, stato dispositivi)
-- Interfaccia grafica fluida grazie a LVGL
-- Touchscreen integrato
-- Design compatto ed elegante
+## Descrizione
 
-## Hardware utilizzato
-- ESP32-S3
-- Display JC3248W535 (3.24" QSPI, touchscreen I2C)
-- Relè opzionale per controllo carichi
+Questo progetto offre un pannello di controllo intelligente che visualizza informazioni in tempo reale e consente il controllo di vari dispositivi tramite Home Assistant.  
+Utilizza ESPHome con la libreria grafica LVGL per creare un'interfaccia utente reattiva e personalizzabile.
 
-## Software
-- [ESPHome](https://esphome.io/)
-- [LVGL (Light and Versatile Graphics Library)](https://lvgl.io/)
-- YAML + Componenti personalizzati per Home Assistant
+## Caratteristiche
 
-## Installazione
-(TBD - Guida in preparazione)
+- Visualizzazione di dati in tempo reale come potenza, tensione e temperatura
+- Controllo del termostato direttamente dal pannello
+- Regolazione della luminosità del display
+- Interfaccia utente personalizzabile con LVGL
+- Compatibilità con dispositivi ESP32 dotati di display touch
+
+## Ispirazione
+
+Questo progetto è stato ispirato dal video di Іван RIO:  
+[Крутий дисплей для Home Assistant | LVGL в ESPHome](https://www.youtube.com/watch?v=efeK-VodNlA)
+
+Codice base di riferimento:  
+[ivan-rio/esphome_configs - cyd-lvgl.yaml](https://github.com/ivan-rio/esphome_configs/blob/main/CYD/cyd-lvgl.yaml)
+
+## Requisiti Hardware
+
+- Microcontrollore ESP32 (consigliato con PSRAM)
+- Display touchscreen compatibile (es. JC3248W535)
+- Alimentazione adeguata per il dispositivo
 
 ## Licenza
 MIT License
+
+---
+
+Le contribuzioni sono benvenute! Sentiti libero di aprire issue o pull request per migliorare il progetto.
